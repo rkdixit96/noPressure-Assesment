@@ -15,6 +15,11 @@ describe('Input Validation', () => {
   test('Input array elements should be less than or equal to 10 ', () => {
     expect(getScore(testcase15)).toBe(null);
   });
+
+  const testcase16 = [7, 1, 5, 3, 1, 4, -3, 5, 1, 2, 7, 2, 1, 6, 1, 1, 5, 1, 3, 1];
+  test('Input array elements should be greater than or equal to 0 ', () => {
+    expect(getScore(testcase16)).toBe(null);
+  });
 });
 
 describe('Testing with different input combinations', () => {

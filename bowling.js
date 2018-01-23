@@ -1,12 +1,15 @@
-function verifyInput(arr1) {
-  if (arr1.length < 10) {
+function verifyInput(arr1, strikeValue, numberOfFrames) {
+  if (arr1.length < numberOfFrames) {
     return false;
   }
   if (arr1.length > 21) {
     return false;
   }
   for (let l = 0; l < arr1.length; l += 1) {
-    if (arr1[l] > 10) {
+    if (arr1[l] > strikeValue) {
+      return false;
+    }
+    if (arr1[l] < 0) {
       return false;
     }
   }
