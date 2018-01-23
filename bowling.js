@@ -1,6 +1,17 @@
+function verifyInput(arr1) {
+  if (arr1.length < 10) {
+    return false;
+  }
+  return true;
+}
+
 function getScore(arr) {
   const strikeValue = 10;
   const numberOfFrames = 10;
+
+  if (!verifyInput(arr, strikeValue, numberOfFrames)) {
+    return null;
+  }
 
   // Initializations
   let score = 0;

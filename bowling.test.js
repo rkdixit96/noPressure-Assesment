@@ -1,5 +1,12 @@
 const getScore = require('./bowling');
 
+describe('Input Validation', () => {
+  const testcase13 = [0, 1, 7, 9];
+  test('Input array should have minimum length of 10', () => {
+    expect(getScore(testcase13)).toBe(null);
+  });
+});
+
 describe('Testing with different input combinations', () => {
   const testcase1 = [7, 1, 5, 3, 1, 4, 3, 5, 1, 8, 7, 2, 1, 6, 1, 1, 5, 1, 3, 1];
   test('Input array has no strikes or spares', () => {
