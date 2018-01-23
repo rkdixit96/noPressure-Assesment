@@ -30,6 +30,16 @@ describe('Testing with different input combinations', () => {
   test('Input array has spare in last frame', () => {
     expect(getScore(testcase6)).toBe(91);
   });
+
+  const testcase7 = [5, 3, 0, 10, 1, 9, 5, 4, 1, 7, 5, 5, 1, 3, 0, 0, 1, 9, 4, 6, 10];
+  test('Input array with strike after spare in the last turn', () => {
+    expect(getScore(testcase7)).toBe(100);
+  });
+
+  const testcase8 = [5, 3, 0, 10, 1, 9, 5, 4, 1, 7, 5, 5, 1, 3, 10, 10, 4, 6, 10];
+  test('Input array with two consecutive strikes in the middle', () => {
+    expect(getScore(testcase8)).toBe(130);
+  });
 });
 
 

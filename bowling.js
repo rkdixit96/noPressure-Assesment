@@ -44,6 +44,7 @@ function getScore(arr) {
     score += frameSums[j];
   }
 
+
   return score;
 }
 
