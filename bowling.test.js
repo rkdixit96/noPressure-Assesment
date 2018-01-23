@@ -45,8 +45,12 @@ describe('Testing with different input combinations', () => {
   test('Input array with three consecutive strikes in the last frame', () => {
     expect(getScore(testcase9)).toBe(156);
   });
-});
 
+  const testcase10 = [5, 3, 0, 10, 1, 9, 5, 4, 1, 7, 5, 5, 1, 3, 10, 10, 10, 6, 4];
+  test('Input array with strike followed by a spare in the last frame', () => {
+    expect(getScore(testcase10)).toBe(142);
+  });
+});
 
 describe('Output validation', () => {
   const testcase = [10, 7, 2, 7, 3, 1, 1, 0, 0, 5, 4, 10, 1, 8, 5, 5, 2, 1];
@@ -59,4 +63,3 @@ describe('Output validation', () => {
     expect(getScore(testcase)).toBeGreaterThanOrEqual(0);
   });
 });
-
