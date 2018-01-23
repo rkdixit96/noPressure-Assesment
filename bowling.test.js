@@ -25,6 +25,11 @@ describe('Testing with different input combinations', () => {
   test('Input array has strike at the end', () => {
     expect(getScore(testcase5)).toBe(102);
   });
+
+  const testcase6 = [5, 3, 0, 10, 1, 9, 5, 4, 1, 7, 5, 5, 1, 3, 0, 0, 1, 9, 4, 6, 1];
+  test('Input array has spare in last frame', () => {
+    expect(getScore(testcase6)).toBe(91);
+  });
 });
 
 
