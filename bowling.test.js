@@ -72,4 +72,8 @@ describe('Output validation', () => {
   test('Returns a non-negative number', () => {
     expect(getScore(testcase)).toBeGreaterThanOrEqual(0);
   });
+
+  test('Returns a number lessthan or equal to 300', () => {
+    expect(getScore(testcase)).toBeLessThanOrEqual(300);
+  });
 });
