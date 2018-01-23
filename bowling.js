@@ -23,6 +23,10 @@ function getScore(arr) {
     }
 
     if (frameDone || frameCount === 2) {
+      // Add spare bonus
+      if (frameSums[currFrame] === strikeValue && frameCount === 2) {
+        frameSums[currFrame] += arr[i + 1];
+      }
       currFrame += 1;
       frameSums[currFrame] = 0;
       frameCount = 0;

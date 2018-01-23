@@ -10,6 +10,11 @@ describe('Testing with different input combinations', () => {
   test('Input array has strikes but no spares', () => {
     expect(getScore(testcase2)).toBe(88);
   });
+
+  const testcase3 = [10, 7, 2, 7, 3, 1, 1, 0, 0, 5, 4, 10, 1, 8, 5, 5, 2, 1];
+  test('Input array has both strikes and spares', () => {
+    expect(getScore(testcase3)).toBe(93);
+  });
 });
 
 
