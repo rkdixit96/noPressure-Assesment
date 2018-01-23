@@ -55,6 +55,11 @@ describe('Testing with different input combinations', () => {
   test('Input array with all 0', () => {
     expect(getScore(testcase11)).toBe(0);
   });
+
+  const testcase12 = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
+  test('Input array with all 10', () => {
+    expect(getScore(testcase12)).toBe(300);
+  });
 });
 
 describe('Output validation', () => {
