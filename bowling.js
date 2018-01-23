@@ -5,7 +5,11 @@ function verifyInput(arr1) {
   if (arr1.length > 21) {
     return false;
   }
-
+  for (let l = 0; l < arr1.length; l += 1) {
+    if (arr1[l] > 10) {
+      return false;
+    }
+  }
 
   return true;
 }

@@ -5,9 +5,15 @@ describe('Input Validation', () => {
   test('Input array should have minimum length of 10', () => {
     expect(getScore(testcase13)).toBe(null);
   });
+
   const testcase14 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   test('Input array should have maximum length of 21', () => {
     expect(getScore(testcase14)).toBe(null);
+  });
+
+  const testcase15 = [7, 1, 5, 3, 1, 4, 3, 5, 1, 32, 7, 2, 1, 6, 1, 1, 5, 1, 3, 1];
+  test('Input array elements should be less than or equal to 10 ', () => {
+    expect(getScore(testcase15)).toBe(null);
   });
 });
 
