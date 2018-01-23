@@ -2,6 +2,11 @@ function verifyInput(arr1) {
   if (arr1.length < 10) {
     return false;
   }
+  if (arr1.length > 21) {
+    return false;
+  }
+
+
   return true;
 }
 

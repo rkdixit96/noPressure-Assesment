@@ -5,6 +5,10 @@ describe('Input Validation', () => {
   test('Input array should have minimum length of 10', () => {
     expect(getScore(testcase13)).toBe(null);
   });
+  const testcase14 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  test('Input array should have maximum length of 21', () => {
+    expect(getScore(testcase14)).toBe(null);
+  });
 });
 
 describe('Testing with different input combinations', () => {
