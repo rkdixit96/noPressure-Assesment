@@ -40,6 +40,11 @@ describe('Testing with different input combinations', () => {
   test('Input array with two consecutive strikes in the middle', () => {
     expect(getScore(testcase8)).toBe(130);
   });
+
+  const testcase9 = [5, 3, 0, 10, 1, 9, 5, 4, 1, 7, 5, 5, 1, 3, 10, 10, 10, 10, 10];
+  test('Input array with three consecutive strikes in the last frame', () => {
+    expect(getScore(testcase9)).toBe(156);
+  });
 });
 
 
