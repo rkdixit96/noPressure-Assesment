@@ -7,5 +7,9 @@ describe('Output validation', () => {
   test('Returns a number', () => {
     expect(typeof getScore(testcase)).toBe('number');
   });
+
+  test('Returns a non-negative number', () => {
+    expect(getScore(testcase)).toBeGreaterThanOrEqual(0);
+  });
 });
 
