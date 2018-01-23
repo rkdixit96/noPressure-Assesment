@@ -20,6 +20,11 @@ describe('Testing with different input combinations', () => {
   test('Input array with frame having 0 in first turn and 10 in the second turn', () => {
     expect(getScore(testcase4)).toBe(87);
   });
+
+  const testcase5 = [5, 3, 0, 10, 1, 9, 5, 4, 1, 7, 5, 5, 1, 3, 0, 0, 1, 9, 10, 5, 1];
+  test('Input array has strike at the end', () => {
+    expect(getScore(testcase5)).toBe(102);
+  });
 });
 
 
