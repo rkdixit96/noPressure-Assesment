@@ -12,8 +12,8 @@ function getScore(arr) {
   frameSums[currFrame] = 0;
 
   for (let i = 0; i < arr.length; i += 1) {
-    // Check for strike
-    if (arr[i] === strikeValue) {
+    // Check for strike, if yes push current frame number and strike index to array
+    if (arr[i] === strikeValue && frameCount === 0) {
       frameSums[currFrame] += strikeValue;
       frameDone = true;
       strikeIndex.push([i, currFrame]);
