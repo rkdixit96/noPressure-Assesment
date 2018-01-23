@@ -50,6 +50,11 @@ describe('Testing with different input combinations', () => {
   test('Input array with strike followed by a spare in the last frame', () => {
     expect(getScore(testcase10)).toBe(142);
   });
+
+  const testcase11 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  test('Input array with all 0', () => {
+    expect(getScore(testcase11)).toBe(0);
+  });
 });
 
 describe('Output validation', () => {
